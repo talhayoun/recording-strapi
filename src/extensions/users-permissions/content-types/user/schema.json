@@ -85,6 +85,28 @@
       ]
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "recording": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "replay": {
       "allowedTypes": [
         "images",
         "files",
@@ -92,7 +114,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true
+      "multiple": false
     }
   }
 }

@@ -13,7 +13,7 @@ module.exports = plugin => {
         const user = await strapi.entityService.findOne(
             'plugin::users-permissions.user',
             ctx.state.user.id,
-            { populate: ['Video'] }
+            { populate: ['Video', 'replay'] }
         );
 
         ctx.body = sanitizeOutput(user);
